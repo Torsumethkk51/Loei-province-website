@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จังหวัดเลย | หน้าหลัก</title>
+</head>
+
+<body>
+    <style>
+        /* initial setting css */
+        html {
+            font-family: "Sarabun", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        body {
+            background-color: rgb(198, 222, 198);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        /* navber css */
+        .menu {
+            list-style: none;
+            display: flex;
+            margin-top: -4px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 35px;
+            background-color: rgb(109, 153, 109);
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .menu li a {
+            padding: 15px 40px;
+        }
+
+        .menu li a:hover {
+            background-color: rgb(87, 121, 87);
+        }
+
+        .menu li .dropdown-menu {
+            display: none;
+            background-color: rgb(69, 126, 69);
+            list-style: none;
+            position: absolute;
+            margin-top: 15px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        .menu li .dropdown-menu li a {
+            display: block;
+        }
+
+        .menu li .dropdown-menu li a:hover {
+            background-color: rgb(48, 90, 48);
+        }
+
+        .menu li:hover>ul {
+            display: block;
+        }
+
+        /* main content css */
+        .main-content {
+            width: 1250px;
+            color: white;
+            background-color: rgb(149, 202, 149);
+            height: auto;
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        }
+
+        .natural-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 4rem;
+            width: 100%;
+            height: 300px;
+        }
+
+        .natural-section img {
+            float: left;
+            width: 500px;
+            height: 300px;
+            margin-right: 1rem;
+        }
+
+        .natural-section h2 {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .natural-section blockquote {
+            width: 500px;
+            font-size: 17px;
+            text-align: left;
+            margin-left: 2rem;
+        }
+
+        .culture-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+            width: 100%;
+            height: 300px;
+        }
+
+        .culture-section img {
+            float: right;
+            width: 500px;
+            height: 300px;
+            margin-left: 1rem;
+        }
+
+        .culture-section h2 {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .culture-section blockquote {
+            width: 500px;
+            font-size: 17px;
+            text-align: left;
+            margin-right: 2rem;
+        }
+
+        .history-section {
+            margin-top: 5rem;
+        }
+
+        .history-section h2 {
+            margin-bottom: 2rem;
+        }
+
+        .history-section p {
+            margin-top: 1rem;
+        }
+
+        .tips-section {
+            height: 419px;
+            margin-top: 5rem;
+            margin-left: 2rem;
+            padding-left: 2rem;
+            border-left: 2px solid white;
+        }
+
+        .tips-section ol {
+            text-align: left;
+            width: 500px;
+        }
+
+        .tips-section ol li {
+            margin-top: 1.5rem;
+        }
+    </style>
+    <div class="container">
+        <!-- hero image -->
+        <div>
+            <img src="/assets/hero-image.png" alt="loei website banner">
+        </div>
+        <!-- menu -->
+        <ul class="menu">
+            <li><a href="home.html">หน้าหลัก</a></li>
+            <li><a href="info.html">ข้อมูลพื้นฐาน</a>
+                <ul class="dropdown-menu">
+                    <li><a href="symbol.html">สัญลักษณ์ประจำจังหวัด</a></li>
+                    <li><a href="landscape.html">ภูมิประเทศ</a></li>
+                </ul>
+            </li>
+            <li><a href="travel.html">แหล่งท่องเที่ยว</a>
+                <ul class="dropdown-menu">
+                    <li><a href="top10-travel.html">10 สถานที่ท่องเที่ยวห้ามพลาด</a></li>
+                    <li><a href="temple.html">ไหว้พระวัดไหนดี</a></li>
+                    <li><a href="top10-resturant.html">10 ร้านอาหารดัง</a></li>
+                </ul>
+            </li>
+            <li><a href="rest.html">ที่พักผ่อน</a></li>
+            <li><a href="developer.html">คณะผู้จัดทำ</a></li>
+        </ul>
+        <!-- main content -->
+        <div class="main-content">
+            <h1>--- ยินดีต้อนรับสู่เว็บไซต์จังหวัดเลย ! ---</h1>
+            <div class="natural-section">
+                <img src="assets/natural.png" alt="loei natural view image">
+                <div>
+                    <h2>ธรรมชาติของจังหวัด</h2>
+                    <blockquote>
+                        จังหวัดของเรามีภูมิประเทศที่หลากหลายและสวยงามโดยเฉพาะพื้นที่ภูเขาที่ถือเป็นหัวใจของธรรมชาติที่งดงามและยังคงความบริสุทธิ์ไม่ถูกทำลายจากการพัฒนาที่นี่
+                        คุณจะได้พบกับภูเขาที่สูงชัน
+                        มีทัศนียภาพอันตระการตาเหมาะสำหรับการเดินป่าและการพักผ่อนในอ้อมกอดของธรรมชาตินอกจากนั้น
+                        จังหวัดของเรายังมีน้ำตกที่ไหลลงมาจากยอดเขา
+                        สร้างบรรยากาศที่สดชื่นและเงียบสงบและป่าไม้ที่อุดมสมบูรณ์เต็มไปด้วยพืชพรรณและสัตว์ป่าที่หาชมได้ยากซึ่งทั้งหมดนี้ช่วยเสริมสร้างประสบการณ์การเดินทางที่ล้ำค่าและน่าจดจำสำหรับผู้ที่รักธรรมชาติ
+                    </blockquote>
+                </div>
+            </div>
+            <div class="culture-section">
+                <div>
+                    <h2>วัฒนธรรมของจังหวัด</h2>
+                    <blockquote>
+
+                        จังหวัดเลยเป็นหนึ่งในจังหวัดที่ตั้งอยู่ในภาคตะวันออกเฉียงเหนือของประเทศไทย
+                        มีวัฒนธรรมที่เป็นเอกลักษณ์และหลากหลาย เนื่องจากพื้นที่นี้เป็นจุดบรรจบของวัฒนธรรมที่แตกต่างกัน
+                        รวมถึงวัฒนธรรมลาว ไทย และชนเผ่าต่างๆ ที่อาศัยอยู่ในภูมิภาคนี้
+                        วัฒนธรรมของจังหวัดเลยจึงมีความเป็นเอกลักษณ์และสะท้อนถึงวิถีชีวิต ความเชื่อ
+                        และภูมิปัญญาท้องถิ่นที่สืบทอดกันมาอย่างยาวนาน
+                    </blockquote>
+                </div>
+                <img src="assets/culture.png" alt="loei natural view image">
+            </div>
+            <div class="flex-center">
+                <div class="history-section">
+                    <h2>ประวัติศาสตร์ของจังหวัดเลย (รับชมคลิป)</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r551Xy-2rsU?si=DD-jGPuL2cXRQbYN"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <p><a href="https://youtu.be/r551Xy-2rsU?si=C9mXNHtXrqX0T786">ที่มา :
+                            https://youtu.be/r551Xy-2rsU?si=C9mXNHtXrqX0T786</a></p>
+                </div>
+                <div class="tips-section">
+                    <h2>เกร็ดน่ารู้จังหวัดเลย</h2>
+                    <ol>
+                        <li>เมืองสามหมอก
+                            เลยเป็นจังหวัดที่มีหมอกปกคลุมเกือบตลอดทั้งปี โดยเฉพาะในช่วงฤดูหนาว
+                            ทำให้บรรยากาศโรแมนติกและสดชื่นมาก
+                        </li>
+                        <li>ต้นกำเนิดประเพณีผีตาโขน
+                            ผีตาโขนเป็นการละเล่นที่มีชื่อเสียง ซึ่งเป็นส่วนหนึ่งของงานบุญหลวง
+                            จัดขึ้นทุกปีในอำเภอด่านซ้าย</li>
+                        <li>แหล่งผลิตมะขามหวาน
+                            มะขามหวานของจังหวัดเลยมีชื่อเสียงระดับประเทศ ด้วยรสชาติหวานอมเปรี้ยวและเนื้อสัมผัสกรอบอร่อย
+                        </li>
+                        <li>ภูเรือ: จุดที่หนาวที่สุดในไทย
+                            อุทยานแห่งชาติภูเรือเคยมีอุณหภูมิต่ำสุดในประเทศไทยในบางปี
+                            ทำให้เป็นจุดหมายปลายทางยอดนิยมในฤดูหนาว</li>
+                        <li>เชียงคาน เมืองเก่าริมโขง
+                            เชียงคานมีบ้านไม้เก่าแบบดั้งเดิมและถนนคนเดินที่เต็มไปด้วยเสน่ห์
+                            ทำให้เป็นสถานที่ท่องเที่ยวยอดนิยมสำหรับผู้ที่ชอบบรรยากาศเงียบสงบ</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <footer style="width: 100%; background-color: rgb(109, 153, 109); color: white; padding-top: 15px; padding-bottom: 15px; display: flex; justify-content: center;">Torsumethkk's Copyright 2024 ©</footer>
+    </div>
+</body>
+
+</html>

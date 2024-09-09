@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จังหวัดเลย | ภูมิประเทศ</title>
+</head>
+
+<body>
+    <style>
+        /* initial setting css */
+        html {
+            font-family: "Sarabun", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        body {
+            background-color: rgb(198, 222, 198);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        /* navber css */
+        .menu {
+            list-style: none;
+            display: flex;
+            margin-top: -4px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 35px;
+            background-color: rgb(109, 153, 109);
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .menu li a {
+            padding: 16.5px 40px;
+        }
+
+        .menu li a:hover {
+            background-color: rgb(87, 121, 87);
+        }
+
+        .menu li .dropdown-menu {
+            display: none;
+            background-color: rgb(69, 126, 69);
+            list-style: none;
+            position: absolute;
+            margin-top: 15px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        .menu li .dropdown-menu li a {
+            display: block;
+        }
+
+        .menu li .dropdown-menu li a:hover {
+            background-color: rgb(48, 90, 48);
+        }
+
+        .menu li:hover>ul {
+            display: block;
+        }
+
+        /* main content css */
+        .main-content {
+            width: 1250px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgb(149, 202, 149);
+            text-align: center;
+            padding-top: 7rem;
+            padding-bottom: 5rem;
+        }
+
+        .main-content blockquote {
+            text-align: center;
+            font-size: large;
+            width: 600px;
+            margin-top: 2rem;
+        }
+
+        .main-content img {
+            margin-top: 2rem;
+        }
+
+        .main-content ul {
+            margin-top: 2rem;
+            width: 800px;
+            text-align: left;
+            border: 3px solid white;
+            border-radius: 15px;
+            padding: 2rem;
+        }
+    </style>
+    <!-- menu -->
+    <div class="container">
+        <!-- hero image -->
+        <div>
+            <img src="/assets/loei-landscape-hero.png" alt="loei website info banner">
+        </div>
+        <ul class="menu">
+            <li><a href="home.html">หน้าหลัก</a></li>
+            <li><a href="info.html">ข้อมูลพื้นฐาน</a>
+                <ul class="dropdown-menu">
+                    <li><a href="symbol.html">สัญลักษณ์ประจำจังหวัด</a></li>
+                    <li><a href="landscape.html">ภูมิประเทศ</a></li>
+                </ul>
+            </li>
+            <li><a href="travel.html">แหล่งท่องเที่ยว</a>
+                <ul class="dropdown-menu">
+                    <li><a href="top10-travel.html">10 สถานที่ท่องเที่ยวห้ามพลาด</a></li>
+                    <li><a href="temple.html">ไหว้พระวัดไหนดี</a></li>
+                    <li><a href="top10-resturant.html">10 ร้านอาหารดัง</a></li>
+                </ul>
+            </li>
+            <li><a href="rest.html">ที่พักผ่อน</a></li>
+            <li><a href="developer.html">คณะผู้จัดทำ</a></li>
+        </ul>
+        <div class="main-content">
+            <h1>-- ภูมิประเทศ --</h1>
+            <img src="/assets/leoi-landscape-image.jpg" alt="loei landscape">
+            <blockquote>
+                สภาพภูมิประเทศโดยทั่วไป ของจังหวัดเลย มีภูเขาล้อมรอบตัวเมือง ลักษณะเป็นแอ่งกระทะ สูงจากระดับน้ําทะเล
+                เฉลี่ยประมาณ 250 เมตร ณ สถานีอุตุนิยมวิทยา ซึ่งสามารถแบ่งลักษณะภูมิประเทศออกเป็น 3 เขต ดังนี้คือ
+            </blockquote>
+            <ul>
+                <li> เขตภูเขาสูง ทางด้านทิศตะวันตกทั้งหมด เริ่มตั้งแต่อําเภอภูกระดึง ขึ้นไปอําเภอภูหลวง อําเภอภูเรือ
+                    อําเภอท่าลี่ และ เขตอําเภอด่านซ้าย อําเภอนาแห้ว ทั้งหมด มีความสูงตั้งแต่เฉลี่ย 600 เมตร
+                    จากระดับน้ําทะเล</li>
+                <li>เขตที่ราบเชิงเขา ได้แก่ บริเวณตอนใต้และตะวันออกของจังหวัด ได้แก่ อําเภอนาด้วง อําเภอปากชม
+                    และพื้นที่บางส่วนในเขตอําเภอภูกระดึงและอําเภอภูหลวง เป็นเขตที่ไม่ค่อยมีภูเขาสูงนัก
+                    มีที่ราบเชิงเขาพอที่จะทําการเพาะปลูกได้ มีประชาชนหนาแน่นปานกลาง</li>
+                <li> เขตที่ราบลุ่ม มีพื้นที่น้อยมากในตอนกลางของจังหวัดคือ ลุ่มน้ําเลย ลุ่มน้ําโขง ได้แก่
+                    บริเวณอําเภอวังสะพุง
+                    อําเภอเมือง อําเภอเชียงคาน เป็นเขตที่ทําการเกษตรได้ดี มีประชากรหนาแน่นมากกว่าเขตอื่น
+                    ภูมิประเทศส่วนใหญ่
+                    เป็นเทือกเขาในแนวทิศเหนือใต้ โดยมีที่ราบลุ่มระหว่างหุบเขา ขนาดไม่ใหญ่มากนัก
+                    สลับอยู่แนวเทือกเขาเหล่านั้น
+                    หินที่พบในบริเวณนี้ส่วนใหญ่มีอายุมาก เช่นหินแปร ยุคไซลูเรียน - ดีโวเนียน อายุ 438-378 ล้านปี หินปูน
+                    ยุคดีโอเนียนตอนกลาง อายุ 385 ล้านปี หินตะกอนและหินแปรชั้นต่ำ อายุ 360-280 ล้านปี
+                    หินยุคคาร์บอนิเฟอรัส
+                    หินปูนและหินดินดาน ยุคเพอร์เมียน อายุ 286-248 ล้านปี หินตะกอน ยุคไตรแอสซิก อายุ 220 ล้านปี
+                    และพบหินยุคโคราช บริเวณเขายอดราบอยู่บนหินเหล่านี้เช่น ภูผาจิต ภูกระดึง ภูหลวง ภูหอ ภูขัด ภูเมี่ยง
+                    (อําเภอนาแห้ว) เนื่องจากชั้นหินเกือบทั้งหมดวางอยู่แนวเหนือ - ใต้
+                    จึงควบคุมให้เกิดที่ราบลุ่มระหว่างหุบเขาและทิศทางแนวเหนือใต้ด้วย แม่น้ําเลยจึงไหลจากใต้ขึ้นเหนือ</li>
+            </ul>
+        </div>
+        <footer style="width: 100%; background-color: rgb(109, 153, 109); color: white; padding-top: 15px; padding-bottom: 15px; display: flex; justify-content: center;">Torsumethkk's Copyright 2024 ©</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จังหวัดเลย | 10 ร้านอาหารดังห้ามพลาด</title>
+</head>
+
+<body>
+    <style>
+        /* initial setting css */
+        html {
+            font-family: "Sarabun", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        body {
+            background-color: rgb(198, 222, 198);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        /* navber css */
+        .menu {
+            list-style: none;
+            display: flex;
+            margin-top: -4px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 35px;
+            background-color: rgb(109, 153, 109);
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .menu li a {
+            padding: 16.5px 40px;
+        }
+
+        .menu li a:hover {
+            background-color: rgb(87, 121, 87);
+        }
+
+        .menu li .dropdown-menu {
+            display: none;
+            background-color: rgb(69, 126, 69);
+            list-style: none;
+            position: absolute;
+            margin-top: 15px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        .menu li .dropdown-menu li a {
+            display: block;
+        }
+
+        .menu li .dropdown-menu li a:hover {
+            background-color: rgb(48, 90, 48);
+        }
+
+        .menu li:hover>ul {
+            display: block;
+        }
+
+        /* main content css */
+        .main-content {
+            width: 1250px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            color: white;
+            background-color: rgb(149, 202, 149);
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+            padding-left: 3rem;
+        }
+
+        .main-content h1 {
+            font-size: 35px;
+        }
+
+        .travel-card {
+            width: 800px;
+            height: auto;
+            padding: 1rem;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        .travel-card img {
+            width: 500px;
+            height: 400px;
+            margin-top: 1rem;
+        }
+
+        .main-content blockquote {
+            margin-top: 1rem;
+            text-align: start;
+        }
+
+        .main-content a {
+            margin-top: 1.5rem;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(113, 191, 113);
+        }
+
+        .main-content a:hover {
+            background-color: rgb(73, 134, 73);
+        }
+
+        .card-wrap {
+            padding-left: 3rem;
+        }
+    </style>
+    <!-- menu -->
+    <div class="container">
+        <!-- hero image -->
+        <div>
+            <img src="/assets/loei-10resturant-hero.png" alt="loei website banner">
+        </div>
+        <ul class="menu">
+            <li><a href="home.html">หน้าหลัก</a></li>
+            <li><a href="info.html">ข้อมูลพื้นฐาน</a>
+                <ul class="dropdown-menu">
+                    <li><a href="symbol.html">สัญลักษณ์ประจำจังหวัด</a></li>
+                    <li><a href="landscape.html">ภูมิประเทศ</a></li>
+                </ul>
+            </li>
+            <li><a href="travel.html">แหล่งท่องเที่ยว</a>
+                <ul class="dropdown-menu">
+                    <li><a href="top10-travel.html">10 สถานที่ท่องเที่ยวห้ามพลาด</a></li>
+                    <li><a href="temple.html">ไหว้พระวัดไหนดี</a></li>
+                    <li><a href="top10-resturant.html">10 ร้านอาหารดัง</a></li>
+                </ul>
+            </li>
+            <li><a href="rest.html">ที่พักผ่อน</a></li>
+            <li><a href="developer.html">คณะผู้จัดทำ</a></li>
+        </ul>
+        <div class="main-content">
+            <h1>10 สถานที่ท่องเที่ยวห้ามพลาด</h1>
+            <div class="card-wrap">
+                <div class="travel-card">
+                    <h2>ร้านที่ 1 ร้านอาหารล้านช้าง</h2>
+                    <img src="/assets/lanchang.jpg" alt="lanchang">
+                    <blockquote>
+                        ร้านอาหารเลย ร้านอาหารล้านช้าง ร้านอาหารเมืองเลยบรรยากาศดี ที่ทุกคนจะต้องตื่นตาตื่นใจไปกับการตกแต่งสไตล์ล้านนา พื้นที่กว้างขวางมาก เหมือนมาทานข้าวที่โรงแรมแพงๆ มีมุมให้เดินเล่นถ่ายรูป แถมยังมีชุดไทยให้เช่าถ่ายรูปด้วยนะคะ สำหรับเมนูอาหารที่นี่จะมีหลายสไตล์ ทั้งอาหารไทย อาหารฝรั่ง เมนูอาหารฟิวชั่น อาทิ ปลาคังผัดฉ่าจานร้อน ยำแปดทัพปลานิล ลาบเป็ดผักสด หลนปูเค็มผักสด เมี่ยงปลาช่อน ผัดเขียวหวานแห้งทะเลกรอบ ลาบหมูทอด ผัดเขียวหวานแห้งปูนิ่มทอด ปลากะพงทอดน้ำปลา ขาหมูล้านช้าง เป็นต้น เป็นร้านที่เหมาะจะนัดกินข้าวกับครอบครัว รวมตัววันสำคัญมากเลยค่ะ
+                    </blockquote>
+                    <a href="https://web.facebook.com/people/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87/100063626407787/?_rdc=1&_rdr">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 2 ร้านอาหารบ้านท่าแพ</h2>
+                    <img src="/assets/bannpae.jpg" alt="bannpae">
+                    <blockquote>
+                        ร้านอาหารเลย ร้านอาหารบ้านท่าแพ ร้านเด็ดร้านดังประจำจังหวัดเลย ตกแต่งสไตล์ไทย บรรยากาศสบายๆ ร่มรื่น เมนูของที่ร้านจะเน้นเสิร์ฟ อาหารไทยพื้นเมืองรสชาติดั้งเดิม ปรุงรสอย่างพิถีพิถัน ร้านมีเมนู signature แนะนำอย่าง เมี่ยงบ้านท่าแพ เมนูเพื่อสุขภาพที่รวมสมุนไพรมากมาย เสริมโปรตีนด้วยกุนเชียง จะทานเดี่ยวหรือห่อกับผักก็อร่อยมาก กุ้งทอดเกลือ เนื้อแน่นรสกลมกล่อม แกงส้มปลากะพงยอดมะพร้าว ซดน้ำเพลินๆ โต่งหมูย่างบ้านท่าแพ เมนูที่ใช้สันคอหมูผัดกับกะปิ อร่อยกลมมากๆ เป็นต้น ร้านนี้มีเมนูอร่อยมากมาย ใครอยากลองทานอาหารไทยพื้นบ้านรสชาติแบบดั้งเดิม ต้องมาที่นี่เลยค่ะ
+                    </blockquote>
+                    <a href="https://www.wongnai.com/articles/ban-thapae-loei#:~:text=%23%E0%B8%A7%E0%B8%87%E0%B9%83%E0%B8%99%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A1%E0%B8%B2%201%20%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B8%95%20%E0%B8%8B%E0%B8%B6%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%99%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%9A%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%9E%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%A5%E0%B8%B3%20%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%A5%E0%B8%B3%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B9%E0%B9%88%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%A5%E0%B8%A2%20%E0%B8%88%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%81%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%99%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%9A%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%A7%E0%B9%88%E0%B8%B2%20%E2%80%9C%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9E%E2%80%9D%202,%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%96%E0%B8%B8%E0%B8%94%E0%B8%B4%E0%B8%9A%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%A4%E0%B8%94%E0%B8%B9%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%88%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%B4%E0%B8%96%E0%B8%B5%E0%B8%9E%E0%B8%B4%E0%B8%96%E0%B8%B1%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%83%E0%B8%AA%E0%B9%88%E0%B9%83%E0%B8%88~%203%20%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%A1%E0%B8%B7%E0%B9%89%E0%B8%AD%21%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%88%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%20%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2%20%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%20%E0%B8%A7%E0%B8%B1%E0%B8%99%20%E0%B8%81%E0%B9%87%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%95%E0%B8%81%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 3 เฮือนหลวงพระบาง</h2>
+                    <img src="/assets/laungprabang.jpg" alt="laungprabang">
+                    <blockquote>
+                        ร้านอาหารเฮือนหลวงพระบาง อีกหนึ่งร้านดังในเมืองเลย ตั้งอยู่ย่านถนนคนเดินเชียงคาน เดินเล่นเหนื่อยๆ ก็แวะมาฝากท้องที่นี่ จุดเด่นของร้านนี้คือเมนูอาหารพื้นเมืองเชียงคานรสชาติต้นตำรับ มีเมนูอาหารขึ้นชื่อหลายอย่าง ทั้งไทย ลาว และจีนไหหลำ เช่น ตำหลวงพระบาง ปลาส้มทอดทรงเครื่อง อั่วหมูวุ้นเส้น หนูอบซอส ต้มส้มปลาน้ำโขง เป็นต้นค่ะ ร้านตั้งอยู่ติดริมแม่น้ำโขง บรรยากาศดีวิวสวยมาก มาทานข้าวตอนกลางคืนรับลมเย็นๆ บอกเลยฟิน
+                    </blockquote>
+                    <a href="https://www.wongnai.com/reviews/1ed17ca176614c38a6adc5f96edbc9b6#:~:text=%E0%B9%80%E0%B8%AE%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%87%20%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%99%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%84%E0%B8%B2%E0%B8%99%20%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B8%AB%E0%B8%B1%E0%B8%A7%3A%20251%20-,500%20%E0%B8%9A%E0%B8%B2%E0%B8%97%20%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%B9%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%94%3A%20%E0%B8%AD%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B8%A7%E0%B8%B8%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%2C%20%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B9%E0%B8%94%E0%B9%84%E0%B8%9F%E0%B9%81%E0%B8%94%E0%B8%87%2C%20%E0%B8%95%E0%B8%B3%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%87">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 4 Smile @ ChiangKhan</h2>
+                    <img src="/assets/smilechiangkan.jpg" alt="smilechiangkan">
+                    <blockquote>
+                        Smile @ ChiangKhan ร้านอาหารเลยในอำเภอเมืองเชียงคาน ร้านตกแต่งสวยบรรยากาศดีมาก มีที่นั่งทั้งในร้านและโซนริมระเบียง นั่งชิลชมวิวแม่น้ำโขง สำหรับเมนูอาหารที่นี่จะเสิร์ฟเมนูอาหารไทย อาหารพื้นเมืองเชียงคาน และเมนูนานาชาติ พร้อมเครื่องดื่มอีกหลายอย่าง เมนูเด็ดของร้านมีทั้งปลากะพงลุยสวน ปลาคังลวกจิ้ม ปลาโจกทอดกระเทียม ผัดผงกะหรี่กุ้ง ผัดฉ่าปลาคัง แจ่วมะกอก และต้มยำปลาคัง อาหารมาจานใหญ่ อร่อย คุ้มค่า ร้านกว้างขวาง รองรับคนได้เยอะ ถ้าอยากนั่งโซนริมระเบียงชมวิวพระอาทิตย์ตก แนะนำให้มาเร็วๆ หรือจองโต๊ะล่วงหน้าค่ะ
+                    </blockquote>
+                    <a href="https://web.facebook.com/smileatchiangkhan/?_rdc=1&_rdr">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 5 ร้านอาหารภูเรือโภชนา</h2>
+                    <img src="/assets/phuruepochana.jpg" alt="phuruepochana">
+                    <blockquote>
+                        ร้านอาหารภูเรือโภชนา ร้านอร่อยในอำเภอภูเรือ ตั้งอยู่ติดริมถนนใหญ่ มองหาง่าย ด้านหลังของร้านเป็นวิวธรรมชาติบรรยากาศดีมาก เมนูของร้านจะมีทั้งอาหารไทยและอาหารอีสาน ปลาสดอร่อยมาก เมนูที่แนะนำให้สั่ง คือ ต้มยำปลาคัง ปลาคังทอดกระเทียม เห็ดหอมทอดซีอิ๊ว ปลากะพงลุยสวน ถั่วหวานผัดน้ำมันหอย ทอดมันกุ้งเห็ดหอม แกงคั่วหอยขม มะระหวานผัดไข่ ผัดฉ่าปลาคัง และ แกงส้มปลาช่อน ถ้ามาทางภูเรือต้องแวะมาร้านนี้เลย
+                    </blockquote>
+                    <a href="https://web.facebook.com/Phuruaphochana/?_rdc=1&_rdr">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 6 ร้านเลยดานัง</h2>
+                    <img src="/assets/loeidanung.jpg" alt="loeidanung">
+                    <blockquote>
+                        ร้านอาหารเลย ร้านเลยดานัง ร้านอาหารเวียดนามเจ้าดัง ใครที่ชอบทานอาหารเพื่อสุขภาพจะต้องถูกใจร้านนี้แน่นอนค่ะ อาหารเวียดนามของร้านเป็นสูตรต้นฉบับดั้งเดิมแท้ๆ มีเมนูอร่อยแนะนำอย่างแหนมเนือง ผักเคียงจัดเต็ม น้ำจิ้มเป็นสูตรเฉพาะของร้าน ห่อแป้งหมูผักกินรวมกันบอกเลยอร่อยมาก กุ้งพันอ้อยชิ้นใหญ่ กินกับน้ำจิ้มรสหวานเปรี้ยว ปอเปี๊ยะทอด กรอบอร่อยไส้แน่น ทางร้านยังขายอาหารตามสั่ง ข้าวจานเดียวด้วยนะคะ ร้านนี้มีทั้งหมด 2 สาขา สาขาแรกอยู่ในตัวเมืองใกล้วงเวียน สนามบิน สาขา 2 จะอยู่นอกเมืองติดถนนใหญ่
+                    </blockquote>
+                    <a href="https://www.wongnai.com/chains/loei-danang">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 7 แปะง๋วน อาหารเช้า</h2>
+                    <img src="/assets/paenguan.jpg" alt="paenguan">
+                    <blockquote>
+                        ร้านอาหารเมืองเลย แปะง๋วน อาหารเช้า ร้านอาหารเช้าในเมืองเลยที่หลายคนแนะนำกัน ร้านบรรยากาศเป็นกันเองตกแต่งเก๋มากๆ เมนูของที่ร้านมีหลายอย่าง ตั้งแต่ไข่กระทะ ข้าวเปียกเส้น แกงเส้น ขนมปังญวน โจ๊กทรงเครื่อง ซี่โครงหมูตุ๋นยาจีน ต้มเลือดหมู สตูว์ไก่ หรือจะฟินกับของหวานอย่างปังจี่จิ้ม หอมนุ่มชุ่มเนย เสิร์ฟพร้อมสังขยาใบเตยและสังขยา ชาไทย ชุดปังง๋วน แบ่งเป็นขนมปังนึ่งกับขนมปังปิ้งจิ้มกินกับสังขยาใบเตยและชาไทยเช่นกัน อย่าลืมสั่งกาแฟ น้ำชา มาทานคู่กันด้วย
+                    </blockquote>
+                    <a href="https://www.wongnai.com/restaurants/577346pG-%E0%B9%81%E0%B8%9B%E0%B8%B0%E0%B8%87%E0%B9%8B%E0%B8%A7%E0%B8%99-%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 8 ข้าวเปียกปากหมา</h2>
+                    <img src="/assets/khaopiag.jpg" alt="khaopiag">
+                    <blockquote>
+                        ร้านอาหารเลย ข้าวเปียกปากหมา ร้านอาหารขึ้นชื่อของเมืองเลย เปิดตั้งแต่ 6 โมงเช้า มีดาราคนดังแวะเวียนมาทานร้านนี้กันเยอะมาก เมนูเด็ดของร้านแน่นอนว่าคือข้าวเปียกเส้น มีจุดเด่นอยู่ที่เส้นสดทำเอง เส้นเหนียวนุ่มกำลังดี หวานน้ำต้มกระดูกหมู ในหนึ่งชามจะใส่หมูชิ้น หมูยอ ไข่ลวก โรยด้วยหอมเจียวซอย อร่อยแบบไม่ต้องปรุงเพิ่ม เส้นของร้านจะมี 2 แบบคือข้าวเปียกเส้นกับวุ้นเส้น อีกหนึ่งร้านอาหารเช้าเมืองเลยที่ต้องแวะมากินให้ได้ค่ะ
+                    </blockquote>
+                    <a href="https://www.wongnai.com/restaurants/12950HE-%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%B5%E0%B8%A2%E0%B8%81%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%AB%E0%B8%A1%E0%B8%B2">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 9 ลุกโภชนา</h2>
+                    <img src="/assets/lukpochana.jpg" alt="lukpochana">
+                    <blockquote>
+                        ร้านลุกโภชนา ร้านอาหารเก่าแก่ร้านแรกในเชียงคาน เปิดขายมานานกว่า 40 ปี เมนูของร้านจะมีทั้งอาหารไทยและอาหารพื้นบ้าน บรรยากาศดีติดริมแม่น้ำโขง อาหารหลากหลาย จะมาทานมื้อเช้า สาย บ่าย เย็น ก็ดีทั้งนั้น เมนูอาหารของร้านจะเน้นเมนูจากปลาแม่น้ำโขงสดๆ ซึ่งเมนูเด็ดที่มาแล้วห้ามพลาดคือต้มยำปลา ปลาเนื้ออ่อนทอดกระเทียม ปลาผัดฉ่าสมุนไพร ปลาคังลวกจิ้ม และต้มแจ่วปลา เป็นต้น แวะมาทานมื้ออร่อยที่นี่กันค่ะ    
+                    </blockquote>
+                    <a href="https://www.wongnai.com/restaurants/93502QE-%E0%B8%A5%E0%B8%B8%E0%B8%81%E0%B9%82%E0%B8%A0%E0%B8%8A%E0%B8%99%E0%B8%B2">อ่านเพิ่มเติม</a>
+                </div>
+                <div class="travel-card">
+                    <h2>ร้านที่ 10 มุมอร่อยไก่ย่าง</h2>
+                    <img src="/assets/mumaroi.jpg" alt="mumaroi">
+                    <blockquote>
+                        มุมอร่อยไก่ย่าง ร้านอาหารเมืองเลยในอำเภอภูเรือ ร้านสีเขียวตั้งเด่น ให้บริการอาหารไทยอาหารอีสานเครื่องดื่ม เป็นร้านอร่อยห้ามพลาดเมื่อมาที่ภูเรือเลยค่ะ เมนูแนะนำของร้านคือไก่ย่างต้นตำรับภูเรือ ไก่ย่างเนื้อนุ่ม หนังกรอบ สุกกำลังดี สั่งไก่มาแล้วก็ต้องสั่งส้มตำรสแซ่บนัวจัดจ้านมากินคู่กันด้วย อาหารของร้านถือว่าอร่อยเลย บรรยากาศดีรายล้อมไปด้วยทิวทัศน์ธรรมชาติ
+                    </blockquote>
+                    <a href="https://www.wongnai.com/restaurants/442127ji-%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%AD%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%A2-%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD/reviews">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <footer style="width: 100%; background-color: rgb(109, 153, 109); color: white; padding-top: 15px; padding-bottom: 15px; display: flex; justify-content: center;">Torsumethkk's Copyright 2024 ©</footer>
+    </div>
+</body>
+
+</html>

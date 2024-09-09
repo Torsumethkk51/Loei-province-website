@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จังหวัดเลย | ไหว้พระวัดไหนดี</title>
+</head>
+
+<body>
+    <style>
+        /* initial setting css */
+        html {
+            font-family: "Sarabun", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        body {
+            background-color: rgb(198, 222, 198);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        /* navber css */
+        .menu {
+            list-style: none;
+            display: flex;
+            margin-top: -4px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 35px;
+            background-color: rgb(109, 153, 109);
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .menu li a {
+            padding: 16.5px 40px;
+        }
+
+        .menu li a:hover {
+            background-color: rgb(87, 121, 87);
+        }
+
+        .menu li .dropdown-menu {
+            display: none;
+            background-color: rgb(69, 126, 69);
+            list-style: none;
+            position: absolute;
+            margin-top: 15px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        .menu li .dropdown-menu li a {
+            display: block;
+        }
+
+        .menu li .dropdown-menu li a:hover {
+            background-color: rgb(48, 90, 48);
+        }
+
+        .menu li:hover>ul {
+            display: block;
+        }
+
+        /* main content css */
+        .main-content {
+            width: 1250px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgb(149, 202, 149);
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+        }
+
+        .card-wrap {
+            margin-top: 2rem;
+        }
+
+        .temple-card {
+            width: 800px;
+            height: auto;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        .temple-card img {
+            margin-top: 1rem;
+            width: 500px;
+        }
+
+        .main-content a {
+            margin-top: 1.5rem;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(113, 191, 113);
+        }
+
+        .main-content a:hover {
+            background-color: rgb(73, 134, 73);
+        }
+    </style>
+    <!-- menu -->
+    <div class="container">
+        <!-- hero image -->
+        <div>
+            <img src="/assets/loei-temple-hero.png" alt="loei website banner">
+        </div>
+        <ul class="menu">
+            <li><a href="home.html">หน้าหลัก</a></li>
+            <li><a href="info.html">ข้อมูลพื้นฐาน</a>
+                <ul class="dropdown-menu">
+                    <li><a href="symbol.html">สัญลักษณ์ประจำจังหวัด</a></li>
+                    <li><a href="landscape.html">ภูมิประเทศ</a></li>
+                </ul>
+            </li>
+            <li><a href="travel.html">แหล่งท่องเที่ยว</a>
+                <ul class="dropdown-menu">
+                    <li><a href="top10-travel.html">10 สถานที่ท่องเที่ยวห้ามพลาด</a></li>
+                    <li><a href="temple.html">ไหว้พระวัดไหนดี</a></li>
+                    <li><a href="top10-resturant.html">10 ร้านอาหารดัง</a></li>
+                </ul>
+            </li>
+            <li><a href="rest.html">ที่พักผ่อน</a></li>
+            <li><a href="developer.html">คณะผู้จัดทำ</a></li>
+        </ul>
+        <div class="main-content">
+            <h1>ไหว้พระวัดไหนดี ?</h1>
+            <div class="card-wrap">
+                <div class="temple-card">
+                    <h2>1.วัดศรีโพธิ์ชัย</h2>
+                    <img src="/assets/sriphochai.jpg" alt="sriphochai">
+                    <a href="https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B9%82%E0%B8%9E%E0%B8%98%E0%B8%B4%E0%B9%8C%E0%B8%8A%E0%B8%B1%E0%B8%A2_(%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B9%89%E0%B8%A7)">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="temple-card">
+                    <h2>2.วัดพระธาตุศรีสองรัก</h2>
+                    <img src="/assets/srisongruk.jpg" alt="srisongruk">
+                    <a href="https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="temple-card">
+                    <h2>3.วัดถ้ำผาปู่</h2>
+                    <img src="/assets/phapuu.jpg" alt="phapuu">
+                    <a href="https://archaeology.sac.or.th/archaeology/151#:~:text=%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%9C%E0%B8%B2%E0%B8%9B%E0%B8%B9%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%87%E0%B8%B5%E0%B8%A2%E0%B8%9A%E0%B8%AA%E0%B8%87%E0%B8%9A%20%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A7%E0%B8%B4%E0%B8%9B%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%87%E0%B8%97%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%20%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%8A%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%97%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%84%E0%B8%9B%20%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B9%80%E0%B8%89%E0%B8%9E%E0%B8%B2%E0%B8%B0%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%A7%E0%B8%B4%E0%B8%9B%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%99%E0%B8%B2,%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%A0%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A1%E0%B8%B5%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%97%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%20%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%99%20%E0%B8%9D%E0%B8%B9%E0%B8%87%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%A7%E0%B9%88%E0%B8%99%20%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86%E0%B8%9A%E0%B8%99%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%B4%E0%B8%95%20%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%99%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%9C%E0%B8%B2%E0%B8%9B%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%8A%E0%B8%B2%E0%B8%A7%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="card-wrap">
+                <div class="temple-card">
+                    <h2>4.วัดป่าห้วยลาด</h2>
+                    <img src="/assets/paahuylad.jpg" alt="paahuylad">
+                    <a href="https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%A5%E0%B8%B2%E0%B8%94">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <footer style="width: 100%; background-color: rgb(109, 153, 109); color: white; padding-top: 15px; padding-bottom: 15px; display: flex; justify-content: center;">Torsumethkk's Copyright 2024 ©</footer>
+    </div>
+</body>
+
+</html>
